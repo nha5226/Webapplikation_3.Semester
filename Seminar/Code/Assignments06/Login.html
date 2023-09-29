@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bibliothek Bregenz">
+    <meta name="keywords" content="Bibliothek">
+    <meta name="author" content="Nina">
+
+    <title>Bücherei Bregenz</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <script src="Formular.js"></script>
+
+</head>
+
+
+<body>
+<ul class="a">
+    <li class="b w3-hover-shadow"><a href="Login.html">Registrieren</a></li>
+    <li class="b w3-hover-shadow"><a href="AboutUs.html">About Us</a></li>
+    <li class="b w3-hover-shadow"><a href="Contact.html">Contact</a></li>
+    <li class="b w3-hover-shadow"><a href="Medientyp.html">Medientyp</a></li>
+    <li class="b w3-hover-shadow"><a href="Hauptseite.html">Home</a></li>
+
+</ul>
+
+
+
+<div style = "float: left">
+    <div style="background-color: white;
+            width: 1320px;
+            height:1150px;
+            margin-top: -20px;
+            margin-left:300px;
+            margin-bottom: 0;
+            ">
+        <div style="margin-left: 20px;
+                    margin-top: 20px">
+            <div class="w3-opacity">
+                <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+                <div class="w3-clear"></div>
+                <header class="w3-margin-bottom">
+                    <h1><b>Registrieren</b></h1>
+                </header>
+            </div>
+
+            <form name="LogIn" onsubmit="return Validierung()" method="POST">
+
+                <div class="container">
+                    <!--Vorname und Nachname!-->
+                    <label for="Vorname"><b>Vorname</b></label>
+                    <img src="Pictures/FFFFFF.png" alt="HP1" width="510px"  height="1px">
+
+                    <label for="Nachname"><b>Nachname</b></label>
+                    <div class="w3-clear"></div>
+
+                    <input type="text" placeholder="Vorname" name="Vorname" id="Vorname" >
+                    <img src="Pictures/FFFFFF.png" alt="HP1" width="74px"  height="1px">
+                    <input type="text" placeholder="Nachname" name="Nachname" id="Nachname" >
+
+                    <!--Geschlecht!-->
+                    <div class="w3-clear"></div>
+                    <label><b>Geschlecht</b></label>
+                    <div class="w3-clear"></div>
+                    <input type="radio" id="Weiblich" name="Geschlecht" value="Weiblich">
+                    <Weiblich for="Weiblich">Weiblich</Weiblich><br>
+                    <input type="radio" id="Männlich" name="Geschlecht" value="Männlich">
+                    <Männlich for="Männlich">Männlich</Männlich><br>
+                    <input type="radio" id="Divers" name="Geschlecht" value="Divers">
+                    <Divers for="Divers">Divers</Divers><br>
+
+                    <!--Adresse!-->
+                    <img src="Pictures/FFFFFF.png" alt="HP1" width="100%"  height="1px">
+                    <label for="Adresse"><b>Adresse</b></label>
+                    <div class="w3-clear"></div>
+                    <textarea class="Straße"  placeholder="   Straße, HNr.,
+   Ort, PLZ"name="Adresse" id="Adresse" ></textarea>
+                    <img src="Pictures/FFFFFF.png" alt="HP1" width="57px"  height="1px">
+                    <img src="Pictures/FFFFFF.png" alt="HP1" width="100%"  height="1px">
+
+
+                    <!--Username!-->
+                    <label for="Username"><b>Username</b></label>
+                    <div class="w3-clear"></div>
+
+                    <input type="text" placeholder="Username" name="Username" id="Username" >
+                    <div class="w3-clear"></div>
+
+
+                    <!--Passwort + Passwort Bestätigen!-->
+                        <label for="psw"><b>Passwort</b></label>
+                    <img src="Pictures/FFFFFF.png" alt="HP1" width="510px"  height="1px">
+                        <label for="pswbest"><b>Passwort bestätigen</b></label>
+                    <div class="w3-clear"></div>
+                        <input type="password" placeholder="Passwort" name="psw" id="psw" >
+                    <img src="Pictures/FFFFFF.png" alt="HP1" width="74px"  height="1px">
+                        <input type="password" placeholder="Passwort bestätigen" name="pswbest" id="pswbest" >
+                    <img src="Pictures/FFFFFF.png" alt="HP1" width="100%px"  height="1px">
+
+
+
+                    <!--Interessen!-->
+                        <label><b>Interessen</b></label>
+                    <div class="w3-clear"></div>
+                    <input type="checkbox" name="Interessen" value="Bücher" id="Buch">
+                    <label for="Buch">Bücher</label>
+                    <div class="w3-clear"></div>
+                            <input type="checkbox" name="Interessen" value="DVD" id="DVD">
+                            <label for="DVD">DVD</label>
+                    <div class="w3-clear"></div>
+                            <input type="checkbox" name="Interessen" value="CD" id="CD">
+                            <label for="CD">CD</label>
+                    <div class="w3-clear"></div>
+
+                    <img src="Pictures/FFFFFF.png" alt="HP1" width="100%"  height="1px">
+
+
+                    <!--Nutzerkategorien!-->
+                    <label><b>Nutzerkategorien</b></label>
+                    <div class="w3-clear"></div>
+                        <input type="checkbox" name="Nutzerkategorien" value="KundIn" id="KundIn">
+                        <label for="KundIn">KundIn</label>
+                    <div class="w3-clear"></div>
+                        <input type="checkbox" name="Nutzerkategorien" value="MitarbeiterIn" id="MitarbeiterIn">
+                        <label for="MitarbeiterIn">MitarbeiterIn</label>
+                    <div class="w3-clear"></div>
+                        <input type="checkbox" name="Nutzerkategorien" value="Admin" id="Admin">
+                        <label for="Admin">Admin</label>
+                    <div class="w3-clear"></div>
+                    <img src="Pictures/FFFFFF.png" alt="HP1" width="100%"  height="1px">
+
+
+
+                    <!--E-Mail!-->
+                    <label for="Mail"><b>E-Mail</b></label>
+                    <div class="w3-clear"></div>
+
+                    <input type="text" placeholder="E-Mail" name="Mail" id="Mail" >
+                    <div class="w3-clear"></div>
+
+                    <img src="Pictures/FFFFFF.png" alt="HP1" width="900px"  height="1px">
+                    <img src="Pictures/FFFFFF.png" alt="HP1" width="900px"  height="1px">
+
+                    <button type="submit">Login</button>
+                </div>
+
+
+                <div class="cancel" >
+                    <button type="reset" class="cancelbtn" >X Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<!--------------------------------------------------------------------------------------------BOTTOM------------------------------------------------------------------------------------------->
+<div style="background-color: black;
+            width: 100%;
+            height: 140px;
+            margin-top: 1150px;
+            margin-bottom: 0;
+            position: relative;
+            ">
+    <div style="
+            place-items: center;
+            color: #383838;
+            display: grid;
+            width: 100%;">
+
+        <ul class="social-links">
+            <li class="Instagram">
+                <div style="margin: 15px">
+                    <img src="Pictures/Instagram.png" alt="Instagram" width="50px" height="50px">
+                </div>
+            </li>
+            <li class="facebook">
+                <div style="margin: 15px">
+                    <img src="Pictures/Facebook.png" alt="Facebook" width="50px" height="50px">
+                </div>
+            </li>
+            <li class="twitter">
+                <div style="margin: 15px">
+                    <img src="Pictures/twitter.png" alt="twitter" width="50px" height="50px">
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>

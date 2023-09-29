@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#map {
+    background-color: white;
+    width: 100%;
+}
+#events {
+    font-size: 14px;
+    height: 50%;
+    overflow-y: scroll;
+    width: 1500px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#events div {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+
+#events div:nth-child(even) {
+    background-color: lightgray;
+}
+
+#events div:nth-child(odd) {
+    background-color: white;
+}
+
+
+#events div:hover {
+    box-shadow: 0 0 10px black;
+}
+
+
+.container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.mapContainer {
+    height: 60%;
+}
